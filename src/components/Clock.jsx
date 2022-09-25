@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 function Clock() {
   let time = new Date().toLocaleTimeString();
   const [currentTime, setCurrentTime] = useState(time);
+  //this is for later to render depending on day or night
   const [hours, setHours] = useState(getHours());
 
   function getHours() {
