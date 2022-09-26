@@ -28,7 +28,7 @@ h1::before {
 h1 .titlespan::after {
   content: "/>";
 }
-.creator {
+.logo {
   color: var(--white);
   position: absolute;
   left: 0;
@@ -42,8 +42,8 @@ h1 .titlespan::after {
   padding: 0;
 }
 
-.creator img {
-  width: 200px;
+.logo img {
+  width: 150px;
 }
 .clock {
   color: var(--white);
