@@ -10,10 +10,10 @@ import Clock from "../components/Clock";
 import SingleNote from "../components/SingleNote";
 import { useState } from "react";
 function Note() {
-  const [notes, setNotes] = useState({});
+  const [notes, setNotes] = useState([]);
 
   function createNote() {
-    console.log("creating note");
+    setNotes([...notes, "Sample note"]);
   }
   return (
     <div styles={styles}>
@@ -26,7 +26,9 @@ function Note() {
       <img onClick={createNote} src={purplefolder} alt="" />
       <Logo></Logo>
       <Clock></Clock>
-      <SingleNote></SingleNote>
+      {notes.map((item) => {
+        return <SingleNote></SingleNote>;
+      })}
     </div>
   );
 }
