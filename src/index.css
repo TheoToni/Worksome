@@ -3,6 +3,7 @@
   --purple: #a456f0;
   --green: #4dcc31;
   --white: #ffffff;
+  --orange: #fe7600;
 }
 
 body {
@@ -98,4 +99,12 @@ h1 .titlespan::after {
   color: white;
   text-align: center;
   border: 1px solid var(--white);
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin: 20px;
 }
