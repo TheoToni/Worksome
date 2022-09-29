@@ -108,3 +108,9 @@ h1 .titlespan::after {
   grid-row-gap: 10px;
   margin: 20px;
 }
+.bin {
+  position: absolute;
+  right: 40px;
+  bottom: 100px;
+  width: 50px;
+}
