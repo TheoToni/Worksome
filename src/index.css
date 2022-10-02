@@ -114,3 +114,80 @@ h1 .titlespan::after {
   bottom: 100px;
   width: 50px;
 }
+.edit-button:hover {
+  cursor: pointer;
+  width: 30px;
+  transition: 0.5s;
+}
+
+/* put this into seperate note css maybe*/
+.note {
+  padding: 1rem;
+  min-height: 170px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  white-space: pre-wrap;
+}
+.note.new {
+  color: white;
+  border-radius: 12px;
+}
+
+.note textarea {
+  border: none;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  resize: none;
+}
+.save {
+  border: none;
+  border-radius: 20px;
+  background-color: var(--white);
+  color: var(--dark);
+  font-weight: 700;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.note img {
+  width: 25px;
+}
+
+.delete-icon:hover {
+  cursor: pointer;
+  width: 30px;
+  transition: 0.5s;
+}
+
+.searchbarContainer {
+  background-color: var(--orange);
+  min-width: 250px;
+  border-radius: 15px;
+  position: absolute;
+  right: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.searchbarContainer textarea {
+  background-color: transparent;
+  border: none;
+  resize: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+}
+textarea::placeholder {
+  color: white;
+  font-weight: 700;
+}

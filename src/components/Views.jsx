@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import App from "../App";
 import Games from "../Pages/Games";
-import Note from "../Pages/Note";
+import Note from "../Pages/NotePage";
 import Todo from "../Pages/Todo";
 import Home from "../Pages/Home";
 function Views() {

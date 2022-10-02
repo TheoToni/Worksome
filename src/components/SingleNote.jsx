@@ -1,45 +1,31 @@
 import React from "react";
-import styles from "./SingleNote.module.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import bin from "../pictures/bin.png";
+import edit from "../pictures/edit.png";
 
-const singleNoteFromLocalStorage = JSON.parse(
-  localStorage.getItem("singleNote")
-);
-
-function SingleNote(props) {
-  const [inputData, setInputData] = React.useState(singleNoteFromLocalStorage);
-
-  useEffect(() => {
-    localStorage.setItem("singleNote", JSON.stringify(inputData));
-  }, [inputData]);
-
-  function inputHandler(event) {
-    setInputData((value) => {
-      return {
-        ...value,
-        text: event.target.value,
-      };
-    });
-    console.log(inputData);
-  }
-
+function SingleNote({ color, backgroundcolor, text, date, deleteHandler, id }) {
   const styles = {
-    backgroundColor: props.backgroundcolor,
-    color: props.color,
+    backgroundColor: backgroundcolor,
+    color: color,
   };
 
+  function inputHandler() {}
+
   return (
-    <div>
-      <textarea
-        onChange={inputHandler}
-        value={inputData.text}
-        style={styles}
-        className="singleNote"
-        name="Notes"
-        id=""
-        cols="10"
-        rows="5"
-      ></textarea>
+    <div style={styles} className="note">
+      <span>{text}</span>
+
+      <div className="note-footer">
+        <small>{date}</small>
+        <img className="edit-button" src={edit} alt="" />
+        {/*If you click on the delete button you call the deleteHandler */}
+        <img
+          className="delete-icon"
+          onClick={() => deleteHandler(id)}
+          src={bin}
+          alt=""
+        />
+      </div>
     </div>
   );
 }
