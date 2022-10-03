@@ -23,6 +23,9 @@ h1 {
 h1 .titlespan {
   color: var(--green);
 }
+h1 .titlespan2 {
+  color: var(--purple);
+}
 h1::before {
   content: "<";
 }
@@ -52,9 +55,17 @@ h1 .titlespan::after {
   font-weight: 700;
   margin-left: 50px;
   margin-top: 20px;
+  margin-right: auto;
   position: absolute;
   left: 0;
   top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 200px;
+}
+.clock img {
+  width: 30px;
 }
 
 .button_regular {
@@ -106,7 +117,7 @@ h1 .titlespan::after {
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  margin: 20px;
+  margin-top: 40px;
 }
 .bin {
   position: absolute;
@@ -173,6 +184,7 @@ h1 .titlespan::after {
   border-radius: 15px;
   position: absolute;
   right: 250px;
+  top: 25px;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -14,11 +14,9 @@ function SingleNote({ color, backgroundcolor, text, date, deleteHandler, id }) {
   return (
     <div style={styles} className="note">
       <span>{text}</span>
-
       <div className="note-footer">
         <small>{date}</small>
         <img className="edit-button" src={edit} alt="" />
-        {/*If you click on the delete button you call the deleteHandler */}
         <img
           className="delete-icon"
           onClick={() => deleteHandler(id)}

@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import spotify from "../pictures/spotify.png";
 
 function Clock() {
   let time = new Date().toLocaleTimeString();
@@ -23,7 +24,14 @@ function Clock() {
   };
 
   setInterval(updateTime, 1000);
-  return <div className="clock">{currentTime}</div>;
+  return (
+    <div className="clock">
+      {currentTime}{" "}
+      <a href="https://spotify.com" target="_blank">
+        <img src={spotify} alt="" />
+      </a>
+    </div>
+  );
 }
 
 export default Clock;
