@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import spotify from "../pictures/spotify.png";
+import youtube from "../pictures/youtube.png";
 
 function Clock() {
   let time = new Date().toLocaleTimeString();
@@ -29,6 +30,9 @@ function Clock() {
       {currentTime}{" "}
       <a href="https://spotify.com" target="_blank">
         <img src={spotify} alt="" />
+      </a>
+      <a href="https://youtube.com" target="_blank">
+        <img src={youtube} alt="" />
       </a>
     </div>
   );

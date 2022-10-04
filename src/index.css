@@ -105,6 +105,8 @@ h1 .titlespan::after {
   font-weight: 700;
   font-size: 1.5rem;
   margin: 20px;
+  background-color: var(--orange);
+  color: var(--white);
 }
 .messageOfTheDay {
   color: white;
@@ -202,4 +204,12 @@ h1 .titlespan::after {
 textarea::placeholder {
   color: white;
   font-weight: 700;
+}
+.TodoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 500px;
+  max-width: 900px;
+  align-items: center;
+  position: relative;
 }

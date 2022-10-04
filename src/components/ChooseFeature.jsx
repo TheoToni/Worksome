@@ -5,11 +5,11 @@ function ChooseFeature() {
   return (
     <div className="chooseFeaturePanel">
       <Link to="/todos">
-        <button className="featureButton_todos">Todos</button>
+        <button className="featureButton_todos">Notes</button>
       </Link>
 
       <Link to="/notes">
-        <button className="featureButton_notes">Notes</button>
+        <button className="featureButton_notes">Todos</button>
       </Link>
 
       <Link to="/games">

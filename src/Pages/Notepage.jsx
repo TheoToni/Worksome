@@ -86,7 +86,7 @@ function Note() {
       <Logo></Logo>
       <Clock></Clock>
       <h1>
-        Not<span className="titlespan">es</span>
+        To<span className="titlespan2">dos</span>
       </h1>
       <Search handleSearchNote={setSearchText}></Search>
       <img
