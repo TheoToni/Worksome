@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./SingleTodo.module.css";
 import pin from "../../pictures/pin.svg";
 import Draggable from "react-draggable";
-function SingleTodo() {
+function SingleTodo(props) {
   return (
     <Draggable>
       <div className={styles.singleTodoContainer}>

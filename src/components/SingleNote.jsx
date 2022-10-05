@@ -8,8 +8,6 @@ function SingleNote({ color, backgroundcolor, text, date, deleteHandler, id }) {
     color: color,
   };
 
-  function inputHandler() {}
-
   return (
     <div style={styles} className="note">
       <span>{text}</span>
