@@ -5,6 +5,8 @@ import Games from "../Pages/Games";
 import Note from "../Pages/NotePage";
 import Todo from "../Pages/Todo";
 import Home from "../Pages/Home";
+import Sketcho from "../Pages/Sketcho";
+import LoginPage from "../Pages/LoginPage";
 function Views() {
   return (
     <Routes>
@@ -12,6 +14,8 @@ function Views() {
       <Route path="/games" element={<Games></Games>}></Route>
       <Route path="/notes" element={<Note></Note>}></Route>
       <Route path="/todos" element={<Todo></Todo>}></Route>
+      <Route path="/sketcho" element={<Sketcho></Sketcho>}></Route>
+      <Route path="/login" element={<LoginPage />}></Route>
       <Route path="*" element={<div>404 Not Found</div>}></Route>
     </Routes>
   );

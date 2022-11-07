@@ -15,6 +15,9 @@ function ChooseFeature() {
       <Link to="/games">
         <button className="featureButton_games">Games</button>
       </Link>
+      <Link to="/sketcho">
+        <button className="featureButton_sketcho">Sketcho</button>
+      </Link>
     </div>
   );
 }
